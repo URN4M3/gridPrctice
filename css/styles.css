@@ -1,0 +1,66 @@
+/* CSS Document */
+
+body {
+	background-color: red;
+	grid-area: a1;
+}
+
+.container {
+	display: grid;
+	width: 100%;
+	grid-template-columns: 30% 33% 33%;
+	grid-template-areas:
+		"a1 a1 a1"
+		"a4 a5 a6"
+		"a7 a7 a7";
+	grid-gap: 2%;
+	justify-content: center;
+}
+
+.aside {
+	grid-area: a6;
+	background-color: green;
+	min-height: 400px;
+}
+
+.header {
+	grid-area: a1;
+	color: white;
+	text-align: center;
+	font-size: 1.5em
+	
+}
+
+.nav {
+	background-color: green;
+	color: white;
+	grid-area: a4;
+	min-height: 150px;
+	
+} 
+
+.main{
+	background-color: white;
+	color:black;
+	grid-area: a5;
+	min-height: 150px;
+	text-align: center;
+}
+
+article h2 {
+	font-size: 1.5em
+}
+
+.sidebar {
+	background-color: yellow;
+	color: black;
+	grid-area: a6;
+	min-height: 150px;
+}
+
+.footer {
+	grid-area: a7;
+	color: white;
+	text-align: center;
+}
+
